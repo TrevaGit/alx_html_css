@@ -1,0 +1,27 @@
+/* Make body a flex container in column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ensure body takes full viewport height */
+    margin: 0;
+}
+
+/* Make main a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* automatic width and height */
+}
+article {
+    flex: 2;          /* takes 2/3 of the main's width */
+    overflow-y: auto;  /* allow vertical scrolling if content is long */
+    padding: 10px;
+    background-color: #fff; /* optional, for better visibility */
+}
+
+aside {
+    flex: 1;          /* takes 1/3 of the main's width */
+    overflow-y: auto;  /* allow vertical scrolling */
+    padding: 10px;
+    background-color: #f9f9f9; /* optional, for better visibility */
+}
