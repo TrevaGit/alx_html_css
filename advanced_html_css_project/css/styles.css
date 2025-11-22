@@ -65,3 +65,13 @@ article h2, aside h3 {
 footer p {
     margin: 0;
 }
+/* Responsive design for smartphone */
+body.works_on_smartphone main {
+    flex-direction: column;
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
