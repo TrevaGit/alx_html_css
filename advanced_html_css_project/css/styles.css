@@ -75,3 +75,142 @@ body.works_on_smartphone aside {
     margin-right: 0;
     margin-bottom: 20px;
 }
+/* Header styling */
+header {
+    background-color: #1a73e8; /* Use the color from Figma */
+    color: white;              /* Text color */
+    display: flex;             /* Flexbox to align logo and title */
+    align-items: center;       /* Vertically center items */
+    padding: 20px 30px;        /* Top/bottom 20px, left/right 30px */
+}
+
+/* Logo styling */
+header .logo {
+    font-size: 2.5em;          /* Bigger than text to look like a logo */
+    margin-right: 15px;        /* Space between logo and title */
+}
+/* First section (article) styling */
+main article {
+    flex: 2;                        /* Takes 2/3 width */
+    background-color: #fce8e6;      /* Background from Figma */
+    padding: 25px;                  /* Space inside the article */
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Slight shadow */
+}
+
+/* Article title */
+main article h2 {
+    color: #d93025;                 /* Heading color from Figma */
+    margin-bottom: 15px;
+}
+
+/* Article text */
+main article p {
+    color: #333;                    /* Paragraph text color */
+    line-height: 1.6;
+}
+/* Sidebar styling */
+main aside {
+    flex: 1;                        /* Takes 1/3 of main width */
+    background-color: #e6f0fa;      /* Light background from Figma */
+    padding: 20px;                  /* Inner spacing */
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Sidebar heading */
+main aside h3 {
+    color: #1a73e8;                 /* Heading color matches Figma */
+    margin-bottom: 10px;
+}
+
+/* Sidebar text */
+main aside p {
+    color: #333;
+    line-height: 1.5;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    gap: 20px; /* Space between article and sidebar */
+}
+footer {
+    background-color: #1a73e8;  /* Matches header */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack article and sidebar vertically */
+        gap: 15px;              /* Space between stacked items */
+    }
+
+    main article, main aside {
+        flex: auto;             /* Each takes full width */
+        width: 100%;
+    }
+
+    header, footer {
+        text-align: center;     /* Center header/footer text on small screens */
+        padding: 15px;          /* Adjust spacing for small screens */
+    }
+}
+/* Logo styling */
+header .logo {
+    font-size: 2.5em;          /* Bigger than header text */
+    margin-right: 15px;         /* Space between logo and title */
+    color: #ffcc00;             /* Logo color */
+}
+/* Article customization */
+main article {
+    background-color: #fff3e6;  /* Light warm background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.1);
+    font-family: "Georgia", serif;
+    line-height: 1.7;
+}
+
+/* Article headings and paragraphs */
+main article h2 {
+    color: #d9534f;  /* Standout heading color */
+    margin-bottom: 15px;
+}
+main article p {
+    color: #555; 
+}
+
+/* Sidebar customization */
+main aside {
+    background-color: #e6f7ff; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Sidebar headings */
+main aside h3 {
+    color: #1a73e8;
+}
+
+/* Footer customization */
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d93025;
+}
