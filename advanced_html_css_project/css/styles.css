@@ -329,3 +329,54 @@ p {
         padding: 20px;
     }
 }
+/* Videos section */
+.videos-section {
+    padding: 30px;
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+.videos-section h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Video list layout */
+.videos-list {
+    display: flex;
+    gap: 20px;               /* Space between video cards */
+    flex-wrap: wrap;          /* Allow wrapping on small screens */
+    list-style: none;         /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.videos-list li {
+    flex: 1 1 calc(33.333% - 20px); /* 3 videos per row minus gap */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 10px;
+}
+
+.videos-list li img {
+    width: 100%;               /* Fill width of the card */
+    border-radius: 5px;
+}
+
+.videos-list li p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .videos-list li {
+        flex: 1 1 100%;       /* Stack videos vertically */
+        margin-bottom: 15px;
+    }
+}
