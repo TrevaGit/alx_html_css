@@ -485,3 +485,38 @@ p {
         padding: 15px;
     }
 }
+/* Footer styling */
+.site-footer {
+    background-color: #333;       /* Dark background */
+    color: #fff;                  /* White text */
+    padding: 25px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #1a73e8; /* Decorative top border */
+}
+
+.site-footer p {
+    margin: 5px 0;               /* Spacing between lines */
+    font-size: 0.95em;
+}
+.site-footer a {
+    color: #1a73e8;              /* Matches Figma primary color */
+    text-decoration: none;
+    margin: 0 8px;               /* Spacing between links */
+    transition: color 0.3s;      /* Smooth hover effect */
+}
+
+.site-footer a:hover {
+    color: #ffcc00;              /* Highlight on hover */
+}
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 20px 15px;
+        font-size: 0.9em;
+    }
+
+    .site-footer a {
+        display: inline-block;
+        margin: 5px 5px;
+    }
+}
