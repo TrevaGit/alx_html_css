@@ -214,3 +214,118 @@ a:hover {
     text-decoration: underline;
     color: #d93025;
 }
+/* Quote section styling */
+.quote-section {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 30px;        /* Top/Bottom 40px, left/right 30px */
+    margin: 30px 0;            /* Space above and below */
+    border-left: 5px solid #1a73e8; /* Decorative left border */
+    border-radius: 8px;
+    text-align: center;        /* Center the quote */
+    max-width: 800px;          /* Limit the width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-section blockquote {
+    font-size: 1.5em;          /* Larger font for quote */
+    font-style: italic;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.quote-section cite {
+    display: block;            /* Move author to next line */
+    font-size: 1em;
+    color: #1a73e8;            /* Color matches design */
+    font-style: normal;
+}
+/* Common section style */
+section {
+    padding: 30px;
+    margin: 20px 0;
+}
+
+/* Text styling */
+h2, h3, h4, p {
+    color: #333;
+    line-height: 1.6;
+    font-family: "Georgia", serif;
+}
+/* Common section styling */
+section {
+    padding: 30px 25px;        /* Inner spacing */
+    margin: 20px 0;            /* Space between sections */
+    border-radius: 10px;       /* Rounded corners for all sections */
+    background-color: #ffffff; /* Default background */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05); /* Subtle shadow */
+    max-width: 900px;          /* Limit width */
+    margin-left: auto;         /* Center horizontally */
+    margin-right: auto;
+}
+
+/* Headings inside sections */
+section h2, section h3 {
+    color: #1a73e8;            /* Primary color */
+    margin-bottom: 15px;
+}
+
+/* Paragraphs inside sections */
+section p {
+    color: #333;
+    line-height: 1.6;
+    /* Quote section */
+.quote-section {
+    background-color: #f9f9f9;
+    border-left: 5px solid #1a73e8;
+    text-align: center;
+}
+
+.quote-section blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.quote-section cite {
+    display: block;
+    font-style: normal;
+    color: #1a73e8;
+}
+/* Global styles */
+body {
+    font-family: "Georgia", serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main article, main aside {
+        flex: auto;
+        width: 100%;
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
