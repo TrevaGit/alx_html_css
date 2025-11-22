@@ -380,3 +380,68 @@ p {
         margin-bottom: 15px;
     }
 }
+/* Membership section */
+.membership-section {
+    padding: 40px 30px;
+    background-color: #f0f7ff; /* Light blue background from Figma */
+    border-radius: 12px;
+    text-align: center;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.membership-section h2 {
+    color: #1a73e8;
+    margin-bottom: 30px;
+}
+.membership-cards {
+    display: flex;
+    gap: 20px;                  /* Space between cards */
+    justify-content: center;     /* Center cards in container */
+    flex-wrap: wrap;             /* Wrap on small screens */
+}
+
+.membership-cards .card {
+    background-color: #ffffff;  /* White card */
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;               /* Fixed width per card */
+    text-align: center;
+}
+
+.membership-cards .card h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.membership-cards .card p {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.membership-cards .card button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.membership-cards .card button:hover {
+    background-color: #155ab6;  /* Darker shade on hover */
+}
+@media (max-width: 768px) {
+    .membership-cards {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .membership-cards .card {
+        width: 100%;   /* Cards take full width on mobile */
+    }
+}
